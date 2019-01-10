@@ -972,7 +972,8 @@ main {
                 <div class="versus">
                     <div class="versus__header">
                         <span class="section-header--up"></span>
-                        <h2 class="versus__header-text section-header" style="font-family: poppins;">Online</h2>
+                        <h2 class="versus__header-text section-header" style="font-family: poppins;">24</h2>
+                        <h2 class="versus__header-text section-header" style="font-family: poppins;">Hour</h2>
                         <h2 class="versus__header-text section-header" style="font-family: poppins;">Hackathon</h2>
                     </div>
                     <p class="versus__desc section-description" style="padding-left:1px;" style="font-family: slate;">Hackathon focuses on building creative and effective solutions to problems involving multiple stakeholders across all sectors. The new ideas help solve age-old problems and the solutions have an impact on the society. All coders and programmers can gear up their stations, gather their wits and get ready to take on the challenges at the online hackathon organised in TechTrix 2k19.</p>
@@ -983,7 +984,7 @@ main {
             <div class="fluid">
                 <div class="text-center relative">
                     <div class="prize-header">
-                        <span class="section-header--up">1 Lakh</span>
+                        <span class="section-header--up">2.5 Lakh</span>
                         <h2 class="prize-header__text section-header">Cash Prizes</h2>
                     </div>
                 <!--     <p class="prize-desc section-description">
@@ -1181,16 +1182,13 @@ main {
     <footer class="flex-rw">
         <section class="footer-social-section flex-rw">
             <span style="padding-bottom: 10px;">
-                    <a class="example__link text-code-hover-feel" href="#" target="_blank">Campus Ambassdor Portal</a>
-                    <a class="example__link text-code-hover-feel" href="register/index.php" target="_blank">Register</a>
+                    <a class="example__link text-code-hover-feel" href="register" target="_blank">Campus Ambassdor Portal</a>
               
           </span>
             <span class="footer-social-overlap footer-social-icons-wrapper" style="padding-bottom:10px;">
       <h5  style="text-align:center;padding-top: 10px;">Follow Us On:</h5>
-      <a href="https://www.facebook.com/" class="generic-anchor" target="_blank" title="Follow us on Facebook" itemprop="significantLink"><img src="../cloudfront/admin2/img/fb.png" style="width:50px;height:40px;padding-left:10px;"/></a>
-      <a href="https://twitter.com" class="generic-anchor" target="_blank" title="Follow us on Twitter" itemprop="significantLink"><img src="../cloudfront/admin2/img/twitter%20(1).png" style="width:40px;height:40px;"/></a>
+      <a href="https://www.facebook.com/techtrix.rcciit" class="generic-anchor" target="_blank" title="Follow us on Facebook" itemprop="significantLink"><img src="../cloudfront/admin2/img/fb.png" style="width:50px;height:40px;padding-left:10px;"/></a>
       <a href="https://www.instagram.com/" class="generic-anchor" target="_blank" title="Follow us on Instagram" itemprop="significantLink"><img src="../cloudfront/admin2/img/insta%20(1).png" style="width:40px;height:40px;"/></a>
-      <a href="https://www.youtube.com/" class="generic-anchor" target="_blank" title="Follow us on Youtube" itemprop="significantLink"><img src="../cloudfront/admin2/img/youtube.png" style="width:40px;height:40px;"/></a>
       </span>
         </section>
     </footer>

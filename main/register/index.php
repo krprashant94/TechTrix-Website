@@ -399,7 +399,7 @@ fbq('track', 'PageView');
 </head>
 <body style="background-color: #171517" >
   
-    <div style="height: 80px; margin-bottom: 5rem;">
+    <div style="margin-bottom: 5rem;">
         <header>
             
 <?php
@@ -459,8 +459,7 @@ fbq('track', 'PageView');
 <div class="row" >
     <div id="video" style=" float:left;
    margin-top: 2rem; ">
-        <!-- <iframe width="600" height="300" src="https://www.youtube.com/embed/6R7JpCAOf7Y" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
-        <div id="loading" ></div>
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/RywrurWlcqs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         <div id="loading_bottom"><img src="../static/t19bottom.png"></div>
     </div>
     <div style="height: 760px; margin-top: 25px; float: right; width: 350px; ">
@@ -468,17 +467,14 @@ fbq('track', 'PageView');
 
             <!-- foundation tabs -->
             <ul class="tabs" data-tab="" >
-                <li class="tab-title"><a href="#panelLogin" target="_self">Log In</a></li>
-                <li class="tab-title active" id="register-tab"><a href="#panelRegister" target="_self">Register</a></li>
+                <li class="tab-title"><a href="#panelLogin" target="_self">Accommodation</a></li>
+                <li class="tab-title active" id="register-tab"><a href="#panelRegister" target="_self">Ambassador</a></li>
             </ul>
             <div class="large-12 columns">
             <div class="tabs-content">
                 <div class="content" id="panelLogin">
                     <div class="row">
 
-                       <!--  <div class="large-12 columns" style="margin-top: 15px; margin-left: 5px;">
-                            <button type="button" id="btn-next-page-fb" class="form-control" onclick="fb_login()" style="width: 270px; height:60px; ">Continue With Facebook</button>
-                        </div> -->
                                                                   
 
 
@@ -486,47 +482,79 @@ fbq('track', 'PageView');
                     <form role="form" method="post" class="login-form">
                         <fieldset style="display: block; border: 0px;margin-top: 0px; ">
                         <div class="large-12 columns">
+                            <h4>This form needs to be filled by participants who require accommodation during Techtrix 2019</h4>
+                            <!-- <div class="fb-btn" onclick="fb_login()" data-btn="true" href=fb_login().html >
 
-                            <div class="fb-btn" onclick="fb_login()" data-btn="true" href=fb_login().html >
-
-                                <img class="fb-btn-img" alt="Facebook" src="../static/facebook.svg" ><!-- react-text: 58 -->Sign in with facebook<!-- /react-text --></div>
+                                <img class="fb-btn-img" alt="Facebook" src="../static/facebook.svg" >
+                                Sign in with facebook</div> -->
     <br >
-                            <label class="labeltext">Your email or techtrix Id</label>
-                                <input type="text" class="form-control inputbor" name="login-id" id="login-id" >
+                            <label class="labeltext">Email address</label>
+                                <input type="email" class="form-control inputbor" name="accommodation-id"  >
                             
                             
                         </div>
                         <div class="form control large-12 columns">
-                            <label class="labeltext">Your password</label>
-                                <input type="password" class="form-control" id="login-pass"/>
+                            <label class="labeltext">Name</label>
+                                <input type="text" class="form-control" name="accommodation-name"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Contact Number</label>
+                                <input type="number" class="form-control" name="accommodation-contact"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Collage</label>
+                                <input type="text" class="form-control" name="accommodation-collage"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Year at Collage</label>
+                                <input type="text" class="form-control" name="accommodation-year"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Address</label>
+                                <input type="text" class="form-control" name="accommodation-address"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Event you are Participating</label>
+                                <input type="text" class="form-control" name="accommodation-event"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Starting Date of accommodation</label>
+                                <input type="date" class="form-control" name="accommodation-startdate"/>
+                            
+                        </div>
+
+                        <div class="form control large-12 columns">
+                            <label class="labeltext">Ending Date of accommodation</label>
+                                <input type="date" class="form-control" name="accommodation-enddate"/>
                             
                         </div>
 
 
+
                         <div class="form control large-12 columns">
-                        <ul>
-                            <li class="alert-message login-invalid" id="login-invalid" style="display: none; text-align: left;">
-                                Invalid email or techtrix ID
-                            </li>
-                            <li class="alert-message login-pass-invalid" id="login-invalid" style="display: none; text-align: left;">
-                                Invalid password
-                            </li>
-                            <li class="alert-message login-error" id="login-error" style="display: none; text-align: left;">
-                            Invalid login or password
-                            </li>
-                        </ul>
+                            <span style="color: red;">Already register</span>
                         </div>
 
 
                         <div class=" form-group large-12 columns" style="margin-top: 10px">
-                            <button type="button" style="border-radius: 0px;" class="form-control btn" id="login-btn">LOG IN</button>
+                            <button type="button" style="border-radius: 0px;" class="form-control btn" id="login-btn">
+                            Apply for Accommodation
+                            </button>
 
                         </div>
                     
-
-                    <div class="large-12 columns" style="text-align:left;">
-                        <a href="#" id="forgot-pass" data-toggle="modal" data-target="#myModal"  >Forgot your password?</a>
-                    </div>
                 </fieldset>
                 </form>
                     </div>
@@ -539,128 +567,70 @@ fbq('track', 'PageView');
                         <form role="form" action="#" method="post" class="registration-form" >
                           <input type='hidden' name='csrfmiddlewaretoken' value='hmFMJrlHI6dH4sMmDs5TpnmtaxjW5xU4' />
 
-                            <fieldset style="display: block; background-color: white; border:0px;">
-                            
-                                <div class="large-12 columns" style="padding-bottom: 35px;">
-                               <!--  <div class="form-group" style="display: table;margin: 0 auto;">
-                            <button type="button" id="btn-next-page-fb" class="large-12 columns" onclick="fb_login()">REGISTER WITH FACEBOOK</button>
-                            </div> -->
-
-                            <div class="fb-btn" onclick="fb_login()" style="margin-top: 40px; margin-bottom: 20px;" data-btn="true"  >
- 
-                                <img class="fb-btn-img" " alt="Facebook"  src="../static/facebook.svg"><!-- react-text: 58 -->Register with facebook<!-- /react-text --></div>
-                                <!--src="https://production.cdmycdn.com/webpack/ffab1a716871d082b20aba480a35595b.svg"
- -->
-                            <!-- <div class="form-group" style="margin-top: 6%;display: table;margin: 0 auto;">
-                          <button type="button" id="btn-next-page-email" class="btn btn-next large-12 columns">REGISTER WITH EMAIL</button>
-                          </div> -->
-                           <div class="fb-btn btn-next" style="margin-top: 20px;" data-btn="true" id="btn-next-page-email" >
-                                <img class="fb-btn-img" alt="email" src="../static/email.svg" ><!-- react-text: 58 -->Register with email<!-- /react-text --></div>
-                                </div>
-                            </fieldset>
                     
                     <fieldset style="height:100%; width:100%; border:0px;">
+                        <h4>Campus Ambassador for Techtrix '19</h4>
                         <div  style="background-color: white">
                         <div class="large-12 columns form-group">
-                            <label  class="labeltext" for="form-first-name">First name</label >
-                                <input type="text" name="name" placeholder="" class="form-first-name form-control" id="form-first-name" value=''>
+                            <label  class="labeltext" for="form-first-name">Name</label >
+                            <input  name="ambassador-name" placeholder="" class="form-first-name form-control" type="text">
                             
-                        </div>
-                        <div class="large-12 columns form-group ">
-                            <label class="labeltext"  for="form-email">Email</label>
-                                <input name="email" placeholder="" class="form-email form-control" id="laluram" type="text" value=''>
-<!-- my changes -->
                         </div>
                         
-                        <div class="large-12 columns form-group">
-                            <label class="labeltext" for="form-password">Password</label>
-                                <input type="password" name="form-repeat-password" placeholder="" class="form-repeat-password form-control" id="password">         
-                            
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Email</label>
+                            <input name="ambassador-email" placeholder="" class="form-email form-control" type="email">
                         </div>
-                        <div class="large-12 columns form-group">
-                            <label class="labeltext" class=" " for="form-repeat-password">Confirm Password</label>
-                                <input type="password" name="form-repeat-password" placeholder="" class="form-repeat-password form-control" id="confirm_password">
-                                     <p id="confirm-password-error" class="error-message"></p> 
-                            
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Contact No</label>
+                            <input name="ambassador-contact" placeholder="" class="form-first-name form-control" type="number">
                         </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">College </label>
+                            <input name="ambassador-college " placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Stream</label>
+                            <input name="ambassador-stream" placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Year</label>
+                            <input name="ambassador-year" placeholder="" class="form-first-name form-control" type="number">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Why do you want to be a Campus Ambassador</label>
+                            <input name="ambassador-why" placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">How would you promote TechTrix 19?</label>
+                            <input name="ambassador-how" placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Mention if you have any previous experience as Campus Ambassador</label>
+                            <input name="ambassador-experience" placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+                        <div class="large-12 columns form-group ">
+                            <label class="labeltext"  for="form-email">Mention the name of the person who suggested you to be a Campus Ambassador for TechTrix 19</label>
+                            <input name="ambassador-suggested" placeholder="" class="form-first-name form-control" type="text">
+                        </div>
+                        
+
+
                         <div class="large-12 columns form control">
-                            <ul style="text-align: left;">
-                                <li class="alert-message alert-email" id="email-error">
-                                  <input type='hidden' id='uid' value=''  />
-  <!-- <strong>Sorry!</strong> -->Email entered is incorrect.
-                                </li>
-                                <li class="alert-message alert-email" id="email-repeat">
-  <!-- <strong>Sorry!</strong> -->Email already registered
-                                </li>
-                                <li class="alert-message alert-confirm-password">
-                                Password didn't match.
-                                </li>
-                            </ul>
+                            <span style="color: red;">Already register</span>
                         </div>
                             <div class="large-12 columns form-group">
                                  <button type="button" id="btn-next" class="btn btna btn-next pure-button pure-button-primary pull-right  " style="width: 100%;">NEXT</button>
                             </div>
                         </div>
-                    </fieldset>
-                    <fieldset style="height:100%; width:100%; border:0px;">
-                        <div style="background-color: white">
-                        <div class="large-12 columns form-group" style="margin-bottom: 30px">
-                            <label class="labeltext" for="form-college">College</label>
-                                  
-                                 <select style="height: 38px;" class="select2_single form-control form-last-name" tabindex="-1" id="form-college"></select>
-                             
-                        </div>
-                        <div class="large-12 columns form-group">
-                            <div style="float: left; margin-top: 5px">
-                            College not in the above list
-                        </div>
-                              <div class="material-switch pull-right" style="float: right;">
-                                <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox"/>
-                                <label for="someSwitchOptionInfo" class="label-info labeltext"></label>
-                              </div>
-                        </div>
-                        <div class="large-12 columns form-group">
-                            
-                                  <input type="text" name="college" placeholder="Type the College name" class="form-last-name form-control" id="form-new-college" disabled="true"/>
-                        </div>
-                        <div class="large-12 columns form-group"  >
-                            <label class="labeltext" for="form-college">Year</label>
-                                    <select  class="show-menu-arrow form-control" id="id_year" name="year">
-                                        <option selected="selected" value="-1">--Select Your Year--</option>
-                                            <option value="1">First</option>
-                                            <option value="2">Second</option>
-                                            <option value="3">Third</option>
-                                            <option value="4">Fourth</option>
-                                            <option value="5">Fifth</option>
-                                            <option value="6">Passout(Only for Startup Fair)</option>
-                                    </select>
-                        </div>
-                        <div class="large-12 columns form-group">
-                            <label class="labeltext" for="form-mobilenumber">Mobile Number</label>
-                                  <input type="text" name="mobileNumber" placeholder="Mobile No. within 10 digits" class="form-mobile-number form-control" id="form-mobile" maxlength="10">
-                                                        </div>
-                        <div class="large-12 columns form-group">
-                            <label class="labeltext" for="form-city">City</label>
-                                  <input type="text" list="citylist" name="form-city" placeholder="City (College)" class="form-city form-control" id="form-city">
-                        </div>
-                        <div class="large-12 columns form control">
-                            <ul>
-                                <li class="alert-message alert-mobile" style="text-align: left;">
-                                    Incorrect mobile number
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-12 columns" style="margin-top: 10px">
-                            <button type="button" class="btn  btna btn-previous" style="float: left;">PREVIOUS</button>
-                           <script src="../../ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="7664c995310f77cae884c143-"></script><button type="button" id="btn-next-page" class="btn btna btn-next page-2" onmouseover="this.style.backgroundColor = '#80222c';" onmouseout="this.style.backgroundColor = '#b8212d';" style="background: #b8212d; float: right;">SUBMIT</button>
-                        </div>
-                    </div>
-                    </fieldset>
-                    <fieldset style="height:100%; width:100%; border:0px;">
-                        <div style="background-color: white">
-                            <div class="large-12 columns form-group" style="margin-bottom: 30px">
-                                <label class="labeltext" id="personal">Thank You for registering in TechTrix 19!</label>
-                            </div>
                     </fieldset>
                     </form>
                     </div>
@@ -672,30 +642,7 @@ fbq('track', 'PageView');
     </div>
     </div>
 </div>
- <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content" style="top: 70px;">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Enter your email to send verification link</h4>
-        </div>
-        <div class="modal-body">
-        <div id="reset-message" style="display: none;"><p id="error-resetemail">ERROR</div>
-         <div class="form-group">
-         <input type="text" class="form-control" name="reset-pass" id="reset-email" placeholder="Registered email address"/>
-                                     <div class="alert-message reset-emailerr" id="reset-emailerr" style="display: none;">
-                                        Invalid Email
-                                        </div>
-         </div>
-         </div>
-        <div class="modal-footer">
-      <button type="button" class="btn pull-left" id="forgot-pass-submit">SUBMIT</button>
-      <button type="button" class="btn pull-right" data-dismiss="modal">CANCEL</button>
-      </div>
-      </div>
-    </div>
-  </div>
+
 <!-- <div style="float:bottom;float:left;padding-left:5%;" >
 <h4><font color="white">For queries on registration, contact : +91-8114 183963</font></h4>
 </div> -->

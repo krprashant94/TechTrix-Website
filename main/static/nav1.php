@@ -4,13 +4,10 @@
         style="width:150px;vertical-align: middle;" alt="techtrix-logo"></a>
 <ul style="overflow-x: hidden;">
     <li><a href="events/index.php" id="underline">Events</a></li>
-    <!-- <li><a href="talks/index.php" id="underline">Think Talks</a></li> -->
     <li><a href="workshops/index.php" id="underline">Workshops</a></li>
-    <li><a href="exhibitions/index.php" id="underline">Exhibitions</a></li>
-    <!-- <li><a href="startupfair/index.php" id="underline">Startup Fair</a></li> -->
-    <li><a href="conclave/index.php" id="underline">Corporate Conclave</a></li>
+    <li><a href="gallery/index.php" id="underline">Gallery</a></li>
     <li><a href="sponsors/index.php" id="underline">Sponsors</a></li>
-    <!-- <li><a href="/contacts" id="underline">Team</a></li> -->
+    <li><a href="contacts/index.php" id="underline">Team</a></li>
     <li> 
         <a id="underline" href="register/index.php">
             Register
